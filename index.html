@@ -1,10 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lesson 1</title>
-</head>
-<body>
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum recusandae tenetur nisi id voluptates dolore perferendis alias nemo, suscipit ipsam distinctio? Libero error, non eaque ipsum quod corporis minus!
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 10(Homework)</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header_menu">
+				<ul class="list">
+					<li>
+						<a href="" class="link">Пункт</a>
+					</li>
+					<li>
+						<a href="" class="link">Пункт</a>
+						<ul class="sublist">
+							<li><a href="" class="sublink">Подпункт</a></li>
+							<li>
+								<a href="" class="sublink">Подпункт</a>
+								<ul class="subsublist">
+									<li><a href="" class="subsublink">Подподпункт</a></li>
+									<li><a href="" class="subsublink">Подподпункт</a></li>
+									<li><a href="" class="subsublink">Подподпункт</a></li>
+									<li>
+										<a href="" class="subsublink">Подподпункт</a>
+										<ul class="subsubsublist">
+											<li><a href="" class="subsubsublink">Подподподпункт</a></li>
+											<li><a href="" class="subsubsublink">Подподподпункт</a></li>
+											<li><a href="" class="subsubsublink">Подподподпункт</a></li>
+										</ul>
+									</li>
+									<li><a href="" class="subsublink">Подподпункт</a></li>
+									<li><a href="" class="subsublink">Подподпункт</a></li>
+								</ul>
+							</li>
+							<li><a href="" class="sublink">Подпункт</a></li>
+							<li><a href="" class="sublink">Подпункт</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" class="link">Пункт</a>
+					</li>
+					<li>
+						<a href="" class="link">Пункт</a>
+					</li>
+					<li>
+						<a href="" class="link">Пункт</a>
+					</li>
+					<li>
+						<a href="" class="link">Пункт</a>
+					</li>
+				
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<h1 class="title">Восстановление пароля</h1>
+			<form class="form"  action="#">
+				 <div class="form__line">
+					 <div class="form__input" >
+						 <label class="form_lable" for="input_1">Введите Email, на него будет выслан новый пароль</label>
+						 <input id="input_1" placeholder="Почта*" class="input" name="email" type="email">
+					 </div>
+				 </div>
+				 <div class="link">
+					 <a class="form_link" href="#">Вернуться в форму авторизации</a>
+				</div>
+				<div class="form__line">
+					<div class="form__input" >
+						<button class="form_buttom" type="button">Отправить</button>
+					</div>
+				</div>
+			</form>
+			 <div class="line"></div>
+			<h1 class="title">Вход</h1>
+			<form class="form" action="#">
+				<div class="form__line">
+					<div class="form__input">
+						<input placeholder="Почта*" class="input" type="email" name="email">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input placeholder="Пароль*" class="input" type="password">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input  class="input_1" type="checkbox" id="check">
+						<label class="form_checkbox_lable1" for="check">Запомнить меня</label>
+						<a class="form_link" href="#">Забыли пароль?</a>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<button class="form_buttom" type="button">Отправить</button>
+					</div>
+				</div>
+				<div class="line"></div>
+			</form>
+			<h1 class="title">Регистрация</h1>
+			<form class="form" action="#">
+			 	<div class="form__line">
+					 <div class="frorm__input">
+						<input class="input" placeholder="Имя*" type="text" name="name">
+					 </div>
+				 </div>
+			 	<div class="form__line">
+					 <div class="form__input">
+						 <input class="input" placeholder="Фамилия*" type="text" name="surname">
+					 </div>
+				 </div>
+				 <div class="form__line">
+					 <div class="form__input">
+						 <input class="input" placeholder="Логин*" type="text" name="Login">
+					 </div>
+				 </div>
+				 <div class="form__line">
+					 <div class="form_input">
+						 <input class="input" placeholder="EMail*" type="email" name="email">
+					 </div>
+				 </div>
+				 <div class="form__line">
+					 <div class="form__input">
+						 <input class="input" placeholder="Пароль*" type="password" name="password">
+					 </div>
+				 </div>
+				 <div class="form__line">
+					 <div class="form__input">
+						 <input class="input" placeholder="Повторить пароль*" type="password">
+					 </div>
+				 </div>
+				 <div class="form__line">
+					<div class="form__input">
+						<div class="option">
+							<input class="option__input" name="sex" type="radio" id="male">
+							<label class="option__label" for="male">Мужчина</label>
+						</div>	
+						<div class="option">
+							<input class="option__input" name="sex" type="radio" id="female">
+							<label class="option__label" for="female">Женщина</label>
+						</div>
+					</div>
+				 </div>
+				 <div class="form__line">
+					 <div class="form__input">
+						 <div class="checkbox">
+						 	<input class="checkbox__input" type="checkbox" id="check_info">
+							 <label class="checkbox__label" for="check_info">Я согласен с</label>
+							 <a class="form_link" href="#">Условия и правила</a>
+						 </div>
+					 </div>
+				 </div>
+				 <div class="form__line">
+					<div class="form__input">
+						<button class="form_buttom" type="button">Регистрация</button>
+					</div>
+				 </div>
+				 <span>У вас есть аккаунт?</span>
+				 <a href="#" class="form_link_2">Войти</a>
+			</form>
+			<div class="line"></div>
+			<form class="form" action="#">
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="Имя*" type="text">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="Фамилия*" type="text">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="Контактный номер*" type="tel">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" type="number">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input"  type="date">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="EMail*" name="email" type="email">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="Пароль*" type="password">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input class="input" placeholder="Повторить пароль*" type="password">
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<div class="checkbox_1">
+							<input checked class="checkbox__input_1" type="checkbox" name="bicycle" id="check_info_1">
+							<label class="checkbox__label_1" for="check_info_1">Велик</label>
+						</div>
+					</div>
+					<div class="form__input">
+						<div class="checkbox_1">
+							<input class="checkbox__input_1" type="checkbox" name="rolers" id="check_info_2">
+							<label class="checkbox__label_1" for="check_info_2">Ролики</label>
+						</div>
+					</div>
+					<div class="form__input">
+						<div class="checkbox_1">
+							<input class="checkbox__input_1" type="checkbox" name="kick_scooter" id="check_info_3">
+							<label class="checkbox__label_1" for="check_info_3">Самокат</label>
+						</div>
+					</div>
+					<div class="form__input">
+						<div class="checkbox_1">
+							<input class="checkbox__input_1" type="checkbox" name="moto" id="check_info_4">
+							<label class="checkbox__label_1" for="check_info_4">Мопед</label>
+						</div>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<textarea class="input" name="message" id=""></textarea>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__input">
+						<input multiple type="file">
+					</div>
+				</div>
+				<button class="form_button_submit" type="submit">Отправить</button>
+				<div class="form__line">
+					<div class="form__input">
+						<select name="currency" class="form__select">
+							<option value="1">Пункт 1</option>
+							<option value="2">Пункт 2</option>
+							<option value="3" se>Пункт 3</option>
+							<option value="4">Пункт 4</option>
+							<option value="5">Пункт 5</option>
+						</select>
+					</div>
+				</div>
+			</form>
+		</main>
+	</body>
 </html>
