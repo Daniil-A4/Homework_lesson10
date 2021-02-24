@@ -170,6 +170,7 @@ h1 {
 	height: 50px;
 	border-radius: 5px;
 	font-size: 18px;
+	padding: 14px 0 14px 20px;
 }
 .input:hover {
 	box-shadow: 0 0 1px 4px #003564;
@@ -212,10 +213,39 @@ h1 {
 	margin: 0 auto;
 	background-color: #fff;
 }
+.form__input {
+	display: inline-block;
+	position: relative;
+}
+.input_1 {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .form_checkbox_lable1 {
+	cursor: pointer;
 	display: inline-block;
 	margin: 0px 90px 0px 0px;
 	font-size: 15px;
+	padding: 0 0 0 30px;
+}
+.form_checkbox_lable1::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.input_1:checked + .form_checkbox_lable1::before {
+	background: white url("../img/check.png") center / 12px no-repeat;
 }
 .form__input .form_link {
 	margin-bottom: 0;
@@ -249,7 +279,7 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0px;
-	border-radius: 50%;
+	border-radius: 5px;
 	background-color: #fff;
 }
 .option__input:checked + .option__label::after {
@@ -285,13 +315,14 @@ h1 {
 	padding: 0 0 0 30px;
 }
 .checkbox__label::before {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	background-color: #fff;
+	border-radius: 5px;
 }
 .checkbox__input:checked + .checkbox__label::before {
 	background: white url('../img/check.png') center / 12px no-repeat;
